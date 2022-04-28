@@ -9,31 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f7399d8-ae7c-47c8-b280-c70fa169a276" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/StatsExporter_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/StatsExporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/api/DummyPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/api/DummyPlayerOffline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/api/DummyPlayerOnline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/api/PlayerManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/api/SpigotInterfaceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/event/StatsListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1f7399d8-ae7c-47c8-b280-c70fa169a276" name="Changes" comment="Implemented simple functionality with offline player handling">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/event/SECommandHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/MCStats.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/SpigotInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/api/SpigotInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/StatsExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/plugin/StatsExporter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/webserver/StatsServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/webserver/StatsServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/webserver/StatsServerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/webserver/StatsServerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/webserver/handlers/NotFoundHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/webserver/handlers/NotFoundHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/webserver/handlers/PlayerStatsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/webserver/handlers/PlayerStatsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/webserver/handlers/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/webserver/handlers/RequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/webserver/repsonses/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/liev/mcstats/webserver/repsonses/ErrorResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +50,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/Dateien/MinecraftSpigot 1.18.2/plugins",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -123,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651150197186</updated>
-      <workItem from="1651150198353" duration="19304000" />
+      <workItem from="1651150198353" duration="22736000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1651154247704</created>
@@ -132,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651154247704</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implemented simple functionality with offline player handling">
+      <created>1651169741339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651169741339</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +141,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Implemented simple functionality with offline player handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented simple functionality with offline player handling" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

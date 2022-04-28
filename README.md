@@ -9,13 +9,14 @@ In the congig.yml you can customise the hostname and port as well as wether the 
 start automatically.
 
 ## Usage
-Access the api via http://hostname:port
+Access the api via `http://hostname:port`<br>
+You can start/stop the webserver ingame using `/se start|stop`
 
 Currently you can access the information as follows:
 + `/player/{uuid}` 
 <br> Shows information on the player if he has ever been on the server while the plugin was enabled. 
 <br> Otherwise an error is displayed.
-<br> The information avialable is the following:
+<br> The information avialable is as follows:
   > + name: the real name of the player
   > + uuid: the uuid of the player
   > + displayName: the name displayed by Minecraft
@@ -25,8 +26,8 @@ Currently you can access the information as follows:
   > + canFly: wether the player is allowed to fly (e.g. they are in creative mode)
   
  + Errors
- <br> e.g. Errors occur if the given path does not exist or a uuid is invalid
- <br> They hold following information:
+ <br> Errors occur if the given path does not exist, a uuid is invalid, etc.
+ <br> They hold the following information:
    > + timestamp: the current timestamp in the format yyyy-mm-dd hh:mm:ss
    > + status: a html code corresponding to the error (e.g. 404)
    > + error: the type of error that occured
