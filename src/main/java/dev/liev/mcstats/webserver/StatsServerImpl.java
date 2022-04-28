@@ -10,6 +10,7 @@ import java.util.concurrent.Executors;
 
 public class StatsServerImpl implements StatsServer {
     private HttpServer server;
+    private boolean running;
 
 
     @Override
@@ -31,6 +32,7 @@ public class StatsServerImpl implements StatsServer {
     public void start() {
         if (server != null) {
             server.start();
+            running = true;
         }
     }
 
@@ -38,6 +40,12 @@ public class StatsServerImpl implements StatsServer {
     public void stop() {
         if (server != null) {
             server.stop(0);
+            running = false;
         }
+    }
+
+    @Override
+    public boolean isRunning() {
+        return running;
     }
 }

@@ -1,0 +1,16 @@
+main: dev.liev.mcstats.plugin.StatsExporter
+name: StatsExporter
+version: 0.1.0
+author: 2kDobby
+description: Allows you to access ingame stats via a REST API
+api-version: '1.18'
+commands:
+  se:
+    description: start or stop the API webserver
+    usage: "Usage: /se start|stop"
+    permission: statsexport.admin
+    permission-message: You don't have the permission to run this command.
+permissions:
+  statsexport.admin:
+    description: Allows you to configure the plugin
+    default: op

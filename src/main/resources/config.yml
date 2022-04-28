@@ -1,0 +1,6 @@
+#The hostname by which the webserver should be accessible; defualt: "localhost"
+hostname: "localhost"
+#The port on which the webserver will run; default: 8000
+port: 8000
+#Wether the server should automatically start when the plugin is loaded; default: true
+autostart: true

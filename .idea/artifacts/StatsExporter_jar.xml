@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StatsExporter:jar">
+    <output-path>D:/Dateien/MinecraftSpigot 1.18.2/plugins</output-path>
+    <root id="archive" name="MCStats.jar">
+      <element id="module-output" name="StatsExporter" />
+    </root>
+  </artifact>
+</component>
