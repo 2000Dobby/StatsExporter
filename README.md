@@ -27,7 +27,7 @@ Currently you can access the information as follows:
  + Errors
  <br> e.g. Errors occur if the given path does not exist or a uuid is invalid
  <br> They hold following information:
-   > + timestamp: the current timestamp
+   > + timestamp: the current timestamp in the format yyyy-mm-dd hh:mm:ss
    > + status: a html code corresponding to the error (e.g. 404)
    > + error: the type of error that occured
    > + message: a short description with further information on the error
